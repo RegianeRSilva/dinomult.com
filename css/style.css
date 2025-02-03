@@ -40,6 +40,11 @@ header {
     user-select: none;
 }
 
+.logo img {
+    width: 130px; /* Redimensiona o logo */
+    height: 130px;
+}
+
 /* menu superior opções  */
 .navigation a {
     position: relative;
@@ -277,4 +282,10 @@ header {
 
 .login-register p a:hover{
     text-decoration: underline;
+}
+
+/* ID Start - Texto e link para tela de encurtador */
+#start{
+    background-color: #ff5100;
+
 }
