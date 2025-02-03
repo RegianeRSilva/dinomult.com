@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dinomult</title>
+    <title>Dinomult | Simplifique suas tarefas em um clique</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
@@ -25,7 +25,68 @@
 
 
     </header>
+
+    <section class="wrapper">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <section class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="senha" required>
+                    <label>Senha</label>
+                </section>
+                <section class="remember-forgot">
+                    <label><input type="checkbox">Lembre-se</label>
+                    <a href="#">Esqueceu a senha?</a>
+                </section>
+                <button type="submit" class="btn">Login</button>
+                <section class="login-register">
+                    <p>Não Possui uma conta? <a href="#" class="register-link">Criar conta</a></p>
+                </section>
+            </form>
+        </section>
+
+        <section class="form-box register">
+            <h2>Cadastre-se</h2>
+            <form action="#">
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" required>
+                    <label>Nome</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </section>
+                <section class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="senha" required>
+                    <label>Senha</label>
+                </section>
+                <section class="remember-forgot">
+                    <label><input type="checkbox">Aceitar termos e condições</label>
+                </section>
+                <button type="submit" class="btn">Cadastre-se</button>
+                <section class="login-register">
+                    <p>Já possui uma conta? <a href="#" class="login-link">Login</a></p>
+                </section>
+            </form>
+        </section>
+
+    </section>
    
+    <script src="../js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
 </body>
 </html>
