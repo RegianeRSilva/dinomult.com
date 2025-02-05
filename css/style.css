@@ -98,6 +98,7 @@ header {
 
 /* wrapper: Estilo do bloco do formulário de login */
 .wrapper {
+    z-index: 10;
     position: relative; /* Necessário para posicionamento dos elementos internos */
     width: 400px; /* Largura do bloco */
     height: 440px; /* Altura do bloco */
@@ -301,7 +302,7 @@ header {
     left: 95px; /* Alinha à esquerda */
     top: 65%; /* Posiciona na parte inferior */
     transform: translateY(-50%); /* Centraliza verticalmente */
-    z-index: -1; /* Garante que o menu fique atras (usando o -1) de outros elementos */
+    /* z-index: -1; Garante que o menu fique atras de outros elementos (usando o -1)  */
 }
 
 /* ID start - edição do comece já */
