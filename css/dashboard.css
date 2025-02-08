@@ -26,6 +26,11 @@ nav.side-menu{
     transition: .5s;
 }
 
+nav.side-menu .logo img{
+    width: 70px; /* Tamanho da largura do logo */
+    height: 70px;
+}
+
 nav.side-menu.expand{
     width: 300px;
 }
