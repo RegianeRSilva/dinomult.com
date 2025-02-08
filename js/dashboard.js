@@ -12,3 +12,12 @@ function selectLink(){
 menuItem.forEach((item)=>
     item.addEventListener('click', selectLink)
 )
+
+// Expandir menu botao
+
+var btnExp = document.querySelector('#btn-exp')
+var menuSide = document.querySelector('.side-menu')
+
+btnExp.addEventListener('click', function(){
+    menuSide.classList.toggle('expand')
+})

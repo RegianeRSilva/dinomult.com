@@ -18,15 +18,15 @@ nav.side-menu{
     height: 100%;
     background-color: #ffffff;
     padding: 40px 0 40px 1%;
-    box-shadow: 3px 0 0 #f76b2b;
+    box-shadow: 3px 0 0 #ff7f4d;
     position: fixed;
     top: 0;
     left: 0;
     overflow: hidden;
-    transition: .2s;
+    transition: .5s;
 }
 
-nav.side-menu:hover{
+nav.side-menu.expand{
     width: 300px;
 }
 
@@ -51,11 +51,14 @@ ul li.menu-item{
 }
 
 ul li.ativo{
-    background-color: #f76b2b;
+    background-color: #ff7f4d;
+    border-top-left-radius: 20px;  /* Arredonda apenas o canto superior esquerdo */
+    border-bottom-left-radius: 20px; /* Arredonda apenas o canto inferior esquerdo */
+
 }
 
 ul li.menu-item:hover{
-    background: #f76b2b;
+    background: #ff7f4d;
     border-top-left-radius: 30px;  /* Arredonda apenas o canto superior esquerdo */
     border-bottom-left-radius: 30px; /* Arredonda apenas o canto inferior esquerdo */
 
@@ -73,7 +76,14 @@ ul li.menu-item a{
 }
 
 ul li.menu-item a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+
+nav.side-menu.expand .txt-link{
     margin-left: 40px;
+    opacity: 1;
 }
 
 ul li.menu-item a .icon > ion-icon{
