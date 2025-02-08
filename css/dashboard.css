@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Reset css: Resetando as configurações padrões do navegador */
+* {
+    margin: 0; /* Remove a margem padrão de todos os elementos */
+    padding: 0; /* Remove o preenchimento padrão de todos os elementos */
+    box-sizing: border-box; /* Garante que a borda e o preenchimento sejam incluídos no tamanho total do elemento */
+    font-family: 'Nunito', sans-serif; /* Define a fonte padrão */
+}
+
+body{
+    display: flex; /* Usa o modelo de layout flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    min-height: 100vh; /* Garante que o corpo ocupe pelo menos 100% da altura da tela */
+    background-color: #fffcf9;
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    background-position: center; /* Posiciona a imagem no centro */
+}
