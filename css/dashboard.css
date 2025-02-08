@@ -50,6 +50,10 @@ ul li.menu-item{
     transition: .2s;
 }
 
+ul li.ativo{
+    background-color: #f76b2b;
+}
+
 ul li.menu-item:hover{
     background: #f76b2b;
     border-top-left-radius: 30px;  /* Arredonda apenas o canto superior esquerdo */
