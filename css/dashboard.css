@@ -14,10 +14,10 @@ body{
 }
 
 nav.side-menu{
-    width: 80px;
+    width: 85px;
     height: 100%;
     background-color: #ffffff;
-    padding: 40px 0 40px 1%;
+    padding: 20px 0 20px 1%;
     box-shadow: 3px 0 0 #ff7f4d;
     position: fixed;
     top: 0;
@@ -27,8 +27,12 @@ nav.side-menu{
 }
 
 nav.side-menu .logo img{
-    width: 70px; /* Tamanho da largura do logo */
-    height: 70px;
+    width: 80px; /* Tamanho da largura do logo */
+    height: 80px;
+    padding-right: 10px;
+    line-height: 35px;
+    /* margin-bottom: 0px; */
+    /* display: flex; */
 }
 
 nav.side-menu.expand{
