@@ -9,7 +9,7 @@
 <body>
     
     <header>
-        <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni dignissimos cumque</h2>
+        <h2>DinoMult seu encurtador de Link</h2>
     </header>
 
     <nav class="side-menu">
@@ -61,12 +61,21 @@
 
     </nav>
 
+    <section class="short-link">
+        <section class="container">
+            <h2>Encurtador de Links</h2>
+            <input type="text" id="url" placeholder="Insira a URL aqui">
+            <button onclick="encurtarLink()" >Encurtar </button>
+            <section id="resultado"></section>
+        </section>
 
+    </section>
 
 
     
             <!-- chamando o script js e os a conexe -->
             <script src="../js/dashboard.js"></script>
+            <script src="../js/short.js"></script>
             <!-- Esse trecho de código está incluindo a biblioteca Ionicons  site https://ionic.io/ionicons -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

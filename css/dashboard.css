@@ -113,3 +113,104 @@ ul li.menu-item a .icon > ion-icon{
     font-size: 30px;
     margin-left: 7px;
 }
+
+section.short-link{
+    /* background: red; */
+    width: 70%;
+    height: 70%;
+    border-color: black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    border: 5px solid rgb(255, 0, 0);
+    border-top-left-radius: 20px;  /* Arredonda apenas o canto superior esquerdo */
+    border-bottom-left-radius: 20px; /* Arredonda apenas o canto inferior esquerdo */
+    border-top-right-radius: 20px;/* Arredonda apenas o canto superior esquerdo */
+    border-bottom-right-radius: 20px; /* Arredonda apenas o canto inferior esquerdo */
+
+}
+
+section.container{
+    background-color: #f5a484b2;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    height: 60%;
+    margin-top: 110px;
+    margin-left: 50px;
+    /* max-width: 350px; */
+}
+
+section.container h2{
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+section.container input{
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: black;
+}
+
+section.container input::placeholder{
+    color: black;
+}
+
+section.container button{
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fffcf9;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section.container button:hover{
+    background-color: #ff7f4d;
+}
+
+section.container #resultado p {
+    margin-top: 20px;
+}
+
+section.container #resultado a {
+    color: blue;
+    text-decoration: none;
+}
+
+section.container #resultado a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+    section.container {
+
+        padding: 20px;
+
+    }
+
+    h2 {
+
+        font-size: 20px;
+
+    }
+
+    section.container button, input {
+        padding: 10px;
+    
+            font-size: 16px;
+    }
+
+}
+
