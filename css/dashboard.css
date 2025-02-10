@@ -13,6 +13,35 @@ body{
     background-color: #fffcf9;
 }
 
+@keyframes slideInBlink {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        color: black;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+        color: white;
+    }
+    100% {
+        color: black;
+    }
+}
+
+header h2 {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 25px;
+    animation: slideInBlink 3.5s ease-out forwards, blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    0% { color: black; }
+    100% { color: white; }
+}
+
+
 header {
     background-color: #ff7f4d;
     width: 100%;
@@ -21,9 +50,10 @@ header {
 
 header h2{
     padding: 10px 0;
-    color: #ffffff;
+    color: black;
     text-align: center;
     font-size: 25px;
+
 }
 
 
@@ -212,5 +242,46 @@ section.container #resultado a:hover{
             font-size: 16px;
     }
 
+}
+
+section.qrcode-link{
+    width: 70%;
+    height: 70%;
+    /* border-color: black; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 250px;
+    border: 5px solid rgb(255, 0, 0);
+    border-top-left-radius: 20px;  /* Arredonda apenas o canto superior esquerdo */
+    border-bottom-left-radius: 20px; /* Arredonda apenas o canto inferior esquerdo */
+    border-top-right-radius: 20px;/* Arredonda apenas o canto superior esquerdo */
+    border-bottom-right-radius: 20px; /* Arredonda apenas o canto inferior esquerdo */
+}
+
+section.wrapper-qr{
+
+    background-color: #f5a484b2;
+    text-align: center;
+    padding: 40px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); */
+    width: 90%;
+    height: 95%;
+    margin-top: 11px;
+    margin-left: 50px;
+}
+
+#texto-qr h1 {
+    color: black;
+    font-size: 30px;
+    /* font-weight: 500; */
+
+}
+
+#texto-qr p {
+    margin-top: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
 }
 
