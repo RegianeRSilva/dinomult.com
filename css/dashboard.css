@@ -22,7 +22,7 @@ body{
     50% {
         transform: translateX(0);
         opacity: 1;
-        color: white;
+        color: gray;
     }
     100% {
         color: black;
@@ -38,7 +38,7 @@ header h2 {
 
 @keyframes blink {
     0% { color: black; }
-    100% { color: white; }
+    100% { color: gray; }
 }
 
 
@@ -248,7 +248,7 @@ section.qrcode-link{
     width: 70%;
     height: 70%;
     /* border-color: black; */
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 50px;
     margin-left: 250px;
     border: 5px solid rgb(255, 0, 0);
@@ -260,7 +260,7 @@ section.qrcode-link{
 
 section.wrapper-qr{
 
-    background-color: #f5a484b2;
+    background-color: #ffccb4;
     text-align: center;
     padding: 40px;
     border-radius: 8px;
@@ -279,9 +279,38 @@ section.wrapper-qr{
 }
 
 #texto-qr p {
-    margin-top: 10px;
+    margin-top: 5px;
     color: black;
     font-size: 16px;
     font-weight: bold;
 }
 
+section.wrapper-qr .form-qr{
+    margin: 20px 0 30px;
+
+}
+
+section.wrapper-qr .form-qr :where(input, button){
+    width: 50%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+section.wrapper-qr .form-qr input{
+    font-size: 17px;
+    padding: 0 17px;
+    border: 1px solid #575757;
+
+}
+
+section.wrapper-qr .form-qr button{
+    color: black;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #fb5f23;
+
+}
