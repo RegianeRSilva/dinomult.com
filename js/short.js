@@ -9,8 +9,8 @@ function encurtarLink() {
         return;
 
     }
-
-    fetch(`https://is.gd/create.php?format=json&url=${encodeURIComponent(url)}`)
+//  fetch(`https://is.gd/create.php?format=json&url=${encodeURIComponent(url)}`)
+    fetch(`https://is.gd/create.php?format=json&url=${url}`)
 
     .then(response => response.json())
 
