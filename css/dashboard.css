@@ -335,3 +335,58 @@ section.wrapper-qr.active .qr-code{
     transition: opacity 0.5s 0.05s ease;
 
 }
+
+.bloco {
+    text-align: center; /* Centraliza os textos */
+}
+
+.bloco h2, .bloco p {
+    margin-bottom: 30px; /* Ajuste este valor para aumentar o espaçamento */
+    margin-top: 50px;
+}
+
+.card-container {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px; */
+
+    display: flex;
+    justify-content: center; /* Centraliza os cards */
+    align-items: center;
+    gap: 100px; /* Reduz o espaçamento entre os cards */
+    margin-top: 20px;
+}
+
+.card {
+    height: 255px;
+    width: 255px;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    border: 2px solid orange;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.6); /* Sombra laranja suave */
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position: absolute;
+    backface-visibility: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
